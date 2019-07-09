@@ -18,7 +18,7 @@ def create_sub_mask_annotation(sub_mask, image_id, category_id, annotation_id, i
     # Note: there could be multiple contours if the object
     # is partially occluded. (E.g. an elephant behind a tree)
     imgray = cv2.cvtColor(sub_mask,cv2.COLOR_BGR2GRAY)
-    _, contours, hierarchy = cv2.findContours(imgray,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(imgray,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     
     # For the contours of the instances in the binary images, if its parent is background (hierarchy == 0),
     # then this contour is the mask contour, abandoning the contours whose parent is not background.

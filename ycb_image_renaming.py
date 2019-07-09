@@ -11,8 +11,8 @@ The aim of this program is to rename all the images.
 
 import os
 
-input_dir = '/mnt/disk/zhiyu/ycb_preprocessed'
-output_dir = '/mnt/disk/zhiyu/ycb_renamed'
+input_dir = 'path to/ycb_preprocessed'
+output_dir = 'path to/ycb_renamed'
 
 newnames = {'002_m': 1, '003_c': 2, '004_s': 3, '005_t': 4, '006_m': 5,\
             '007_t': 6, '008_p': 7, '009_g': 8, '010_p': 9, '011_b': 10,\

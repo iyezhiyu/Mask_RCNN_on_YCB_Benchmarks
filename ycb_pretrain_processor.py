@@ -11,9 +11,9 @@ This program aims to move all the files to the right place.
 
 import os
 
-input_dir = '/mnt/disk/zhiyu/ycb_train_val_splited'
-anno_input_dir = '/mnt/disk/zhiyu/ycb_annotations'
-output_dir = '/mnt/disk/zhiyu/ycb_for_train'
+input_dir = 'path to/ycb_train_val_splited'
+anno_input_dir = 'path to/ycb_annotations'
+output_dir = 'path to/ycb_for_train'
 
 files = os.listdir(input_dir)
 for file in files:

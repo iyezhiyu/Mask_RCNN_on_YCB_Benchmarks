@@ -12,8 +12,8 @@ The aim of this program is to split the train (two thirds) and the validation (o
 import os
 import random
 
-input_dir = '/mnt/disk/zhiyu/ycb_renamed'
-output_dir = '/mnt/disk/zhiyu/ycb_train_val_splited'
+input_dir = 'path to/ycb_renamed'
+output_dir = 'path to/ycb_train_val_splited'
 
 files = os.listdir(input_dir)
 for file in files:

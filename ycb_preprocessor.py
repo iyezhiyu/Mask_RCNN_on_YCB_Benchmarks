@@ -20,8 +20,8 @@ import time
 from PIL import Image
 from PIL import ImageOps
 
-input_dir = '/mnt/disk/zhiyu/ycb_objects'
-output_dir = '/mnt/disk/zhiyu/ycb_preprocessed'
+input_dir = 'path to/ycb_objects'
+output_dir = 'path to/ycb_preprocessed'
 
 files = os.listdir(input_dir)
 for file in files:

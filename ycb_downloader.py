@@ -70,7 +70,7 @@ links.append(tlinks[47]) # 052_extra_large_clamp
 links.append(tlinks[55]) # 061_foam_brick
 
 
-output_dir = '/mnt/disk/zhiyu/ycb_objects'
+output_dir = 'path to/ycb_objects'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 

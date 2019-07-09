@@ -2,7 +2,7 @@
 
 ## Introduction
 This project aims to use YCB benchmarks to train a Mask RCNN.
-However, because all the training images contain only one instance, so this model can only detect well when the images contain only one instance.
+However, this model can only detect well when the images contain only one instance.
 To use a model which can detect many instances of the YCB objects in an image, see [Mask_RCNN_on_YCB_Video_Dataset](https://github.com/iyezhiyu/Mask_RCNN_on_YCB_Video_Dataset).
 
 ## Image Processing Steps
@@ -73,4 +73,8 @@ such as $Detectron/configs/12_2017_baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml:
 ```
 
 ## Results
-* Detect well for the images containing only one instance. However, if an image contains more than one instance, this model can not do well, so the improvement is provided, see [Mask_RCNN_on_YCB_Video_Dataset](https://github.com/iyezhiyu/Mask_RCNN_on_YCB_Video_Dataset).
+* Because the images of the training set all contain only one instance, and the instances are all in the center of the image, also the backgrounds are quite monotonic, so this model can not detect well
+* Specifically, my trained model can detect the bounding boxes (the average of precisions is 0.96, the average of recalls is 0.96) and the segmentations (the average of precisions is 0.93, the average of recalls is 0.92) quite well for the images containing only one instance, but not for the categories, such as the images in the images/single_object_1/2/3.jpg
+![single object 1](images/single_object_1.jpg)
+* However, if an image contains more than one instance, this model can not do well, such as the image in the images/multi_objects.jpg. The improvement is provided, see [Mask_RCNN_on_YCB_Video_Dataset](https://github.com/iyezhiyu/Mask_RCNN_on_YCB_Video_Dataset).
+![multi objects](images/multi_objects.jpg)

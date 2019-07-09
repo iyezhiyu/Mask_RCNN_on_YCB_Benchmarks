@@ -65,8 +65,8 @@ def generateannotation(kind):
 
 
 
-input_dir = '/mnt/disk/zhiyu/ycb_train_val_splited'
-anno_output_dir = '/mnt/disk/zhiyu/ycb_annotations'
+input_dir = 'path to/ycb_train_val_splited'
+anno_output_dir = 'path to/ycb_annotations'
 
 files = os.listdir(input_dir)
 
