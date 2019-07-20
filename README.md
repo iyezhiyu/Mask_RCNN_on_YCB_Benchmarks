@@ -75,6 +75,12 @@ such as $Detectron/configs/12_2017_baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml:
 ## Results
 * Because the images of the training set all contain only one instance, and the instances are all in the center of the image, also the backgrounds are quite monotonic, so this model can not detect well
 * Specifically, my trained model can detect the bounding boxes (the average of precisions is 0.96, the average of recalls is 0.96) and the segmentations (the average of precisions is 0.93, the average of recalls is 0.92) quite well for the images containing only one instance, but not for the categories, such as the images in the images/single_object_1/2/3.jpg
-![single object 1](images/single_object_1.jpg)
+<div align="center">
+  <img src="images/single_object_1.jpg" width="640px" />
+  <p>Single Object Result Example</p>
+</div>
 * However, if an image contains more than one instance, this model can not do well, such as the image in the images/multi_objects.jpg. The improvement is provided, see [Mask_RCNN_on_YCB_Video_Dataset](https://github.com/iyezhiyu/Mask_RCNN_on_YCB_Video_Dataset).
-![multi objects](images/multi_objects.jpg)
+<div align="center">
+  <img src="images/multi_objects.jpg" width="640px" />
+  <p>Multi Objects Result Example</p>
+</div>
